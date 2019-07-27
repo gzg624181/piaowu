@@ -1,0 +1,19 @@
+Array
+(
+    [appid] => wx0b0886d2684fd9ef
+    [bank_type] => CFT
+    [cash_fee] => 1
+    [fee_type] => CNY
+    [is_subscribe] => N
+    [mch_id] => 1544214821
+    [nonce_str] => gsvoz42o0q4j27au1z9bkj53zdd95rl7
+    [openid] => oz7S15GN_EPrXdVlGqeoXYl1EEhg
+    [out_trade_no] => 20190716155002633322
+    [result_code] => SUCCESS
+    [return_code] => SUCCESS
+    [sign] => 09108050940F0A1E752693668CAB2EFD
+    [time_end] => 20190716155026
+    [total_fee] => 1
+    [trade_type] => JSAPI
+    [transaction_id] => 4200000331201907165824158498
+)
