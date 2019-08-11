@@ -1,6 +1,6 @@
 <?php
     /**
-	   * 链接地址： 更改购票人信息设置为默认显示
+	   * 链接地址： 添加购票人信息
 	   *
      * 下面直接来连接操作数据库进而得到json串
      *
@@ -17,8 +17,10 @@
      * @return string
      *
      * @添加购票人信息   提供返回参数账号，
-     *  购票人信息 id
-     *  购票会员   mid
+     * company         公司名称
+     * name            用户姓名
+     * tel             联系电话
+     * mid             会员唯一id
      */
 require_once("../../include/config.inc.php");
 $Data = array();
@@ -27,15 +29,22 @@ if(isset($token) && $token==$cfg_auth_key){
 
   //备注 ：使用get传输数据
 
-  // 将默认显示的先更改为正常
-  $dosql->ExecNoneQuery("UPDATE pmw_buyer SET defaults=0 where mid=$mid and defaults=1");
+  $posttime=time();  //添加时间
 
-  //将需要更改的购票人信息设置为默认显示
-  $sql =  "UPDATE pmw_buyer SET defaults=1 where id=$id";
-  
+   // 判断添加的购票人信息是否是第一次添加
+
+  $r=$dosql->GetOne("SELECT id FROM pmw_buyer where id=$mid");
+
+   //如果数据库里面没有这个会员添加的购票人信息，则自动将第一条数据设置为默认显示
+  if(!is_array($r)){
+   $defaults = 1;   //默认显示
+  }else{
+   $defaults = 0;
+  }
+  $sql = "INSERT INTO `#@__buyer`(company,name,tel,mid,defaults,posttime) VALUES ('$company','$name',$tel,$mid,$defaults,$posttime)";
   if($dosql->ExecNoneQuery($sql)){
     $State = 1;
-    $Descriptor = '默认显示更改成功!';
+    $Descriptor = '购票信息添加成功!';
     $result = array (
                 'State' => $State,
                 'Descriptor' => $Descriptor,
@@ -45,7 +54,7 @@ if(isset($token) && $token==$cfg_auth_key){
     echo phpver($result);
   }else{
     $State = 0;
-    $Descriptor = '默认显示更改失败!';
+    $Descriptor = '购票信息添加失败!';
     $result = array (
                 'State' => $State,
                 'Descriptor' => $Descriptor,

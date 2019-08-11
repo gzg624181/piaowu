@@ -1,6 +1,6 @@
 <?php
     /**
-	   * 链接地址： 更改购票人信息设置为默认显示
+	   * 链接地址： 获取购票人的所有信息列表
 	   *
      * 下面直接来连接操作数据库进而得到json串
      *
@@ -16,9 +16,9 @@
      *
      * @return string
      *
-     * @添加购票人信息   提供返回参数账号，
-     *  购票人信息 id
-     *  购票会员   mid
+     * @所有购票人信息   提供返回参数账号，
+
+     * mid             会员唯一id
      */
 require_once("../../include/config.inc.php");
 $Data = array();
@@ -27,15 +27,14 @@ if(isset($token) && $token==$cfg_auth_key){
 
   //备注 ：使用get传输数据
 
-  // 将默认显示的先更改为正常
-  $dosql->ExecNoneQuery("UPDATE pmw_buyer SET defaults=0 where mid=$mid and defaults=1");
-
-  //将需要更改的购票人信息设置为默认显示
-  $sql =  "UPDATE pmw_buyer SET defaults=1 where id=$id";
-  
-  if($dosql->ExecNoneQuery($sql)){
+  $dosql->Execute("SELECT * FROM pmw_buyer where mid=$mid");
+  $nums = $dosql->GetTotalRow();
+  if($nums >0){
+    while($row=$dosql->GetArray()){
+     $Data[]=$row;
+    }
     $State = 1;
-    $Descriptor = '默认显示更改成功!';
+    $Descriptor = '购票信息列表查询成功!';
     $result = array (
                 'State' => $State,
                 'Descriptor' => $Descriptor,
@@ -45,7 +44,7 @@ if(isset($token) && $token==$cfg_auth_key){
     echo phpver($result);
   }else{
     $State = 0;
-    $Descriptor = '默认显示更改失败!';
+    $Descriptor = '购票信息列表查询为空!';
     $result = array (
                 'State' => $State,
                 'Descriptor' => $Descriptor,

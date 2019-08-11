@@ -6935,3 +6935,261 @@
 <?php exit(); ?> Time: 2019-07-19 03:40:04. || Page: /api/get_order_list/ || IP: 171.83.53.250 || Error: Unknown column 'undefined' in 'where clause' Error sql: SELECT * FROM `pmw_order` WHERE did=undefined
 <?php exit(); ?> Time: 2019-07-21 13:16:37. || Page: /api/get_ticket_content/ || IP: 171.83.53.250 || Error: Unknown column 'undefined' in 'where clause' Error sql: SELECT * FROM `pmw_ticket` WHERE id=undefined and checkinfo=1
 <?php exit(); ?> Time: 2019-07-21 13:16:37. || Page: /api/get_ticket_banner/ || IP: 171.83.53.250 || Error: Unknown column 'undefined' in 'where clause' Error sql: SELECT picarr from pmw_ticket where id=undefined
+<?php exit(); ?> Time: 2019-07-25 16:03:31. || Page: /api/add_buyer/ || IP: 59.174.249.5 || Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 Error sql: SELECT id FROM pmw_buyer where id=
+<?php exit(); ?> Time: 2019-07-25 16:03:31. || Page: /api/add_buyer/ || IP: 59.174.249.5 || Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1,1564041811)' at line 1 Error sql: INSERT INTO `pmw_buyer`(company,name,tel,mid,defaults,posttime) VALUES ('壹合','张安',13163389351,,1,1564041811)
+<?php exit(); ?> Time: 2019-07-25 16:28:10. || Page: /api/del_buyer/ || IP: 59.174.249.5 || Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 Error sql: DELETE FROM pmw_buyer where id=
+<?php exit(); ?> Time: 2019-07-25 17:25:37. || Page: /api/update_buyer_default/ || IP: 59.174.249.5 || Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 Error sql: UPDATE pmw_buyer SET defaults=1 where id=
+<?php exit(); ?> Time: 2019-07-25 17:30:42. || Page: /api/add_order/ || IP: 59.174.249.5 || Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1 Error sql: INSERT INTO `pmw_order` (tid,jingquname,did,contactname,contacttel,usetime,price,typename,nums, totalamount,paytype,orderid,posttime,timestampuse,ymd,bid) VALUES (1,'三峡人家风景区',undefined,'张','13163389352','2019-8-9','40','儿童票',1,'40','weixin','20190725173042507189',1564047042,1565280000,'2019-07-25',)
+<?php exit(); ?> Time: 2019-07-25 17:32:40. || Page: /api/add_order/ || IP: 59.174.249.5 || Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1 Error sql: INSERT INTO `pmw_order` (tid,jingquname,did,contactname,contacttel,usetime,price,typename,nums, totalamount,paytype,orderid,posttime,timestampuse,ymd,bid) VALUES (1,'三峡人家风景区',1,'张安','13163389352','2019-7-31','40','儿童票',1,'40','weixin','20190725173240735786',1564047160,1564502400,'2019-07-25',)
+<?php exit(); ?> Time: 2019-07-26 11:07:00. || Page: /api/weixinpay/refund.php || IP: 119.98.60.30 || Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 Error sql: SELECT id FROM pmw_order where did=21 and posttime=
+<?php exit(); ?> Time: 2019-07-26 11:12:32. || Page: /api/weixinpay/refund.php || IP: 117.136.52.240 || Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 Error sql: SELECT id FROM pmw_order where did=21 and posttime=
+<?php exit(); ?> Time: 2019-07-26 14:03:32. || Page: /api/get_order_list/ || IP: 219.140.152.81 || Error: Unknown column 'undefined' in 'where clause' Error sql: SELECT * FROM `pmw_order` WHERE did=undefined
+<?php exit(); ?> Time: 2019-07-26 14:34:59. || Page: /api/get_refund/ || IP: 219.140.152.81 || Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and id=44' at line 1 Error sql: UPDATE pmw_order SET refund_state=1 where did= and id=44
+<?php exit(); ?> Time: 2019-07-26 15:19:12. || Page: /api/add_order/ || IP: 219.140.152.81 || Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''2019-07-26',9)' at line 1 Error sql: INSERT INTO `pmw_order` (tid,jingquname,did,contactname,contacttel,usetime,price,typename,nums, totalamount,paytype,orderid,posttime,timestampuse,ymd,bid) VALUES (3,'木兰草原',3,'桂桂桂','13618613798','2019-undefined','0.01','优惠票',3,'0.03','wxpay','20190726151912517664',1564125552,,'2019-07-26',9)
+<?php exit(); ?> Time: 2019-07-26 15:19:16. || Page: /api/add_order/ || IP: 219.140.152.81 || Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''2019-07-26',9)' at line 1 Error sql: INSERT INTO `pmw_order` (tid,jingquname,did,contactname,contacttel,usetime,price,typename,nums, totalamount,paytype,orderid,posttime,timestampuse,ymd,bid) VALUES (3,'木兰草原',3,'桂桂桂','13618613798','2019-undefined','0.01','优惠票',3,'0.03','wxpay','20190726151916404020',1564125556,,'2019-07-26',9)
+<?php exit(); ?> Time: 2019-07-26 15:19:23. || Page: /api/add_order/ || IP: 219.140.152.81 || Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''2019-07-26',9)' at line 1 Error sql: INSERT INTO `pmw_order` (tid,jingquname,did,contactname,contacttel,usetime,price,typename,nums, totalamount,paytype,orderid,posttime,timestampuse,ymd,bid) VALUES (3,'木兰草原',3,'桂桂桂','13618613798','2019-undefined','0.01','优惠票',3,'0.03','wxpay','20190726151923190169',1564125563,,'2019-07-26',9)
+<?php exit(); ?> Time: 2019-07-26 15:19:31. || Page: /api/add_order/ || IP: 219.140.152.81 || Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''2019-07-26',9)' at line 1 Error sql: INSERT INTO `pmw_order` (tid,jingquname,did,contactname,contacttel,usetime,price,typename,nums, totalamount,paytype,orderid,posttime,timestampuse,ymd,bid) VALUES (3,'木兰草原',3,'桂桂桂','13618613798','2019-undefined','0.01','优惠票',3,'0.03','wxpay','20190726151931122094',1564125571,,'2019-07-26',9)
+<?php exit(); ?> Time: 2019-07-26 16:33:20. || Page: /admin/ticket_save.php || IP: 219.140.152.81 || Error: Unknown column 'specs' in 'field list' Error sql: UPDATE pmw_ticket SET names='木兰草原',types='8,9',flag='h',lowmoney='30',label='自然风光',remarks='开放时间 7:00-23:55',level=5,picarr='["uploads\/image\/20190712\/1562916085.jpg","uploads\/image\/20190712\/1562911139.jpg"]',specs='',content='',xuzhi='<span style=\"color:#333333;font-family:\" white-space:normal;background-color:#ffffff;\"=\"\">儿童：儿童身高1.2米（不含）以下免票；【免费】；大中小学在读学生，凭有效学生证件；儿童限身高1.2米（含）-1.4米（含）；老人限年龄60周岁（含）-70周岁（不含）凭有效身份证或老年证。【半价】。</span><br style=\"color:#333333;font-family:\" white-space:normal;background-color:#ffffff;\"=\"\">
+<span style=\"color:#333333;font-family:\" white-space:normal;background-color:#ffffff;\"=\"\">老人：70岁（含）以上的老人持老年证免票；【免费】。</span><br style=\"color:#333333;font-family:\" white-space:normal;background-color:#ffffff;\"=\"\">
+<span style=\"color:#333333;font-family:\" white-space:normal;background-color:#ffffff;\"=\"\">军人：军人凭持相关证件免票；【免费】。</span><br style=\"color:#333333;font-family:\" white-space:normal;background-color:#ffffff;\"=\"\">
+<span style=\"color:#333333;font-family:\" white-space:normal;background-color:#ffffff;\"=\"\">残疾人：残疾人持相关证件免票；【免费】。</span>',solds=0,content='<p>
+	<span style=\"color:#333333;font-family:\" white-space:normal;background-color:#ffffff;\"=\"\">&nbsp; &nbsp; &nbsp; &nbsp;木兰草原位于武汉黄陂王家河镇街聂家岗，荆楚名山——木兰山东面，湖北十大休闲度假区——木兰湖的南面，属“木兰八景”之一。景区距武汉市城区36公里，交通十分便捷。景区规划面积4800亩，分为草原风情旅游区和休闲度假区，融草原风情观光、户外拓展、水上游乐、商务会议、休闲度假为一体。</span> 
+</p>
+<p align=\"center\">
+	<span style=\"color:#333333;font-family:\" white-space:normal;background-color:#ffffff;\"=\"\"><img src=\"/uploads/image/20190712/1562915569.jpg\" alt=\"\" /><br />
+</span> 
+</p>
+<p align=\"center\">
+	<span style=\"color:#333333;font-family:\" white-space:normal;background-color:#ffffff;\"=\"\"><img src=\"/uploads/image/20190712/1562912719.jpg\" alt=\"\" /><br />
+</span> 
+</p>
+<p>
+	<span style=\"color:#333333;font-family:\" white-space:normal;background-color:#ffffff;\"=\"\"><span style=\"color:#333333;font-family:\" white-space:normal;background-color:#ffffff;\"=\"\">从木兰草原的门楼到白鹭湖的栈桥、洁白的哈达、到饱受风霜的蒙古包、历史久远的敖包，导游（庄主）通过魅力的演讲仿佛把我们带到了辽阔的北方草原，带领大家一起领略武汉木兰草原悠扬的草原文化和具有传奇的塞北风情。</span></span> 
+</p>
+<p align=\"center\">
+	<span style=\"color:#333333;font-family:\" white-space:normal;background-color:#ffffff;\"=\"\"><img src=\"/uploads/image/20190712/1562919158.jpg\" alt=\"\" /><br />
+</span> 
+</p>
+<p>
+	<span style=\"color:#333333;font-family:\" white-space:normal;background-color:#ffffff;\"=\"\"><span style=\"color:#333333;font-family:\" white-space:normal;background-color:#ffffff;\"=\"\">在木兰草原的标志性建筑牛角大门楼前合影后，通过一系列的草原小品，辽阔的草原就展现在您的面前，清澈的白鹭湖、宁静的蒙古部落、飘扬的哈达雕塑，一切是那么的自然、宁静与祥和。</span></span> 
+</p>
+<p>
+	<span style=\"color:#333333;font-family:\" white-space:normal;background-color:#ffffff;\"=\"\"><br />
+</span> 
+</p>
+<p>
+	<br />
+</p>
+<p>
+	<br />
+</p>' WHERE id=3
+<?php exit(); ?> Time: 2019-07-26 16:36:19. || Page: /admin/ticket_save.php || IP: 219.140.152.81 || Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'content='<p>\x0D\x0A\x09<span style=\"color:#333333;font-family:\" white-space:n' at line 1 Error sql: UPDATE pmw_ticket SET names='木兰草原',types='7,9',flag='h',lowmoney='30',label='自然风光',remarks='开放时间 7:00-23:55',level=5,picarr='["uploads\/image\/20190712\/1562916085.jpg","uploads\/image\/20190712\/1562911139.jpg"]',specs='',content='',xuzhi='<span style=\"color:#333333;font-family:\" white-space:normal;background-color:#ffffff;\"=\"\">儿童：儿童身高1.2米（不含）以下免票；【免费】；大中小学在读学生，凭有效学生证件；儿童限身高1.2米（含）-1.4米（含）；老人限年龄60周岁（含）-70周岁（不含）凭有效身份证或老年证。【半价】。</span><br style=\"color:#333333;font-family:\" white-space:normal;background-color:#ffffff;\"=\"\">
+<span style=\"color:#333333;font-family:\" white-space:normal;background-color:#ffffff;\"=\"\">老人：70岁（含）以上的老人持老年证免票；【免费】。</span><br style=\"color:#333333;font-family:\" white-space:normal;background-color:#ffffff;\"=\"\">
+<span style=\"color:#333333;font-family:\" white-space:normal;background-color:#ffffff;\"=\"\">军人：军人凭持相关证件免票；【免费】。</span><br style=\"color:#333333;font-family:\" white-space:normal;background-color:#ffffff;\"=\"\">
+<span style=\"color:#333333;font-family:\" white-space:normal;background-color:#ffffff;\"=\"\">残疾人：残疾人持相关证件免票；【免费】。</span>',solds=0,orderid=,content='<p>
+	<span style=\"color:#333333;font-family:\" white-space:normal;background-color:#ffffff;\"=\"\">&nbsp; &nbsp; &nbsp; &nbsp;木兰草原位于武汉黄陂王家河镇街聂家岗，荆楚名山——木兰山东面，湖北十大休闲度假区——木兰湖的南面，属“木兰八景”之一。景区距武汉市城区36公里，交通十分便捷。景区规划面积4800亩，分为草原风情旅游区和休闲度假区，融草原风情观光、户外拓展、水上游乐、商务会议、休闲度假为一体。</span> 
+</p>
+<p align=\"center\">
+	<span style=\"color:#333333;font-family:\" white-space:normal;background-color:#ffffff;\"=\"\"><img src=\"/uploads/image/20190712/1562915569.jpg\" alt=\"\" /><br />
+</span> 
+</p>
+<p align=\"center\">
+	<span style=\"color:#333333;font-family:\" white-space:normal;background-color:#ffffff;\"=\"\"><img src=\"/uploads/image/20190712/1562912719.jpg\" alt=\"\" /><br />
+</span> 
+</p>
+<p>
+	<span style=\"color:#333333;font-family:\" white-space:normal;background-color:#ffffff;\"=\"\"><span style=\"color:#333333;font-family:\" white-space:normal;background-color:#ffffff;\"=\"\">从木兰草原的门楼到白鹭湖的栈桥、洁白的哈达、到饱受风霜的蒙古包、历史久远的敖包，导游（庄主）通过魅力的演讲仿佛把我们带到了辽阔的北方草原，带领大家一起领略武汉木兰草原悠扬的草原文化和具有传奇的塞北风情。</span></span> 
+</p>
+<p align=\"center\">
+	<span style=\"color:#333333;font-family:\" white-space:normal;background-color:#ffffff;\"=\"\"><img src=\"/uploads/image/20190712/1562919158.jpg\" alt=\"\" /><br />
+</span> 
+</p>
+<p>
+	<span style=\"color:#333333;font-family:\" white-space:normal;background-color:#ffffff;\"=\"\"><span style=\"color:#333333;font-family:\" white-space:normal;background-color:#ffffff;\"=\"\">在木兰草原的标志性建筑牛角大门楼前合影后，通过一系列的草原小品，辽阔的草原就展现在您的面前，清澈的白鹭湖、宁静的蒙古部落、飘扬的哈达雕塑，一切是那么的自然、宁静与祥和。</span></span> 
+</p>
+<p>
+	<span style=\"color:#333333;font-family:\" white-space:normal;background-color:#ffffff;\"=\"\"><br />
+</span> 
+</p>
+<p>
+	<br />
+</p>
+<p>
+	<br />
+</p>' WHERE id=3
+<?php exit(); ?> Time: 2019-07-26 16:37:48. || Page: /admin/ticket_save.php || IP: 219.140.152.81 || Error: Unknown column 'specs' in 'field list' Error sql: UPDATE pmw_ticket SET names='三峡人家风景区',types='Array',flag='h',lowmoney='100',label='亲子游#优惠价#风景旅游区',remarks='购票时间 每天八点开始',level=1,picarr='["uploads\/image\/20190712\/1562916085.jpg","uploads\/image\/20190712\/1562911139.jpg"]',specs='',content='',xuzhi='三峡人家风景区<br />',solds=2000,content='<p>
+	三峡人家风景区
+</p>
+<p align=\"center\">
+	<img src=\"/uploads/image/20190713/1563008288.jpg\" alt=\"\" title=\"\" width=\"375\" height=\"258\" align=\"\" /> 
+</p>' WHERE id=1
+<?php exit(); ?> Time: 2019-07-26 16:40:23. || Page: /admin/ticket_save.php || IP: 219.140.152.81 || Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'content='<p>\x0D\x0A\x09<span style=\"color:#333333;font-family:\" white-space:n' at line 1 Error sql: UPDATE pmw_ticket SET names='木兰草原',types='8,9',flag='h',lowmoney='30',label='自然风光',remarks='开放时间 7:00-23:55',level=5,picarr='["uploads\/image\/20190712\/1562916085.jpg","uploads\/image\/20190712\/1562911139.jpg"]',specs='',content='',xuzhi='<span style=\"color:#333333;font-family:\" white-space:normal;background-color:#ffffff;\"=\"\">儿童：儿童身高1.2米（不含）以下免票；【免费】；大中小学在读学生，凭有效学生证件；儿童限身高1.2米（含）-1.4米（含）；老人限年龄60周岁（含）-70周岁（不含）凭有效身份证或老年证。【半价】。</span><br style=\"color:#333333;font-family:\" white-space:normal;background-color:#ffffff;\"=\"\">
+<span style=\"color:#333333;font-family:\" white-space:normal;background-color:#ffffff;\"=\"\">老人：70岁（含）以上的老人持老年证免票；【免费】。</span><br style=\"color:#333333;font-family:\" white-space:normal;background-color:#ffffff;\"=\"\">
+<span style=\"color:#333333;font-family:\" white-space:normal;background-color:#ffffff;\"=\"\">军人：军人凭持相关证件免票；【免费】。</span><br style=\"color:#333333;font-family:\" white-space:normal;background-color:#ffffff;\"=\"\">
+<span style=\"color:#333333;font-family:\" white-space:normal;background-color:#ffffff;\"=\"\">残疾人：残疾人持相关证件免票；【免费】。</span>',solds=0,orderid=,content='<p>
+	<span style=\"color:#333333;font-family:\" white-space:normal;background-color:#ffffff;\"=\"\">&nbsp; &nbsp; &nbsp; &nbsp;木兰草原位于武汉黄陂王家河镇街聂家岗，荆楚名山——木兰山东面，湖北十大休闲度假区——木兰湖的南面，属“木兰八景”之一。景区距武汉市城区36公里，交通十分便捷。景区规划面积4800亩，分为草原风情旅游区和休闲度假区，融草原风情观光、户外拓展、水上游乐、商务会议、休闲度假为一体。</span> 
+</p>
+<p align=\"center\">
+	<span style=\"color:#333333;font-family:\" white-space:normal;background-color:#ffffff;\"=\"\"><img src=\"/uploads/image/20190712/1562915569.jpg\" alt=\"\" /><br />
+</span> 
+</p>
+<p align=\"center\">
+	<span style=\"color:#333333;font-family:\" white-space:normal;background-color:#ffffff;\"=\"\"><img src=\"/uploads/image/20190712/1562912719.jpg\" alt=\"\" /><br />
+</span> 
+</p>
+<p>
+	<span style=\"color:#333333;font-family:\" white-space:normal;background-color:#ffffff;\"=\"\"><span style=\"color:#333333;font-family:\" white-space:normal;background-color:#ffffff;\"=\"\">从木兰草原的门楼到白鹭湖的栈桥、洁白的哈达、到饱受风霜的蒙古包、历史久远的敖包，导游（庄主）通过魅力的演讲仿佛把我们带到了辽阔的北方草原，带领大家一起领略武汉木兰草原悠扬的草原文化和具有传奇的塞北风情。</span></span> 
+</p>
+<p align=\"center\">
+	<span style=\"color:#333333;font-family:\" white-space:normal;background-color:#ffffff;\"=\"\"><img src=\"/uploads/image/20190712/1562919158.jpg\" alt=\"\" /><br />
+</span> 
+</p>
+<p>
+	<span style=\"color:#333333;font-family:\" white-space:normal;background-color:#ffffff;\"=\"\"><span style=\"color:#333333;font-family:\" white-space:normal;background-color:#ffffff;\"=\"\">在木兰草原的标志性建筑牛角大门楼前合影后，通过一系列的草原小品，辽阔的草原就展现在您的面前，清澈的白鹭湖、宁静的蒙古部落、飘扬的哈达雕塑，一切是那么的自然、宁静与祥和。</span></span> 
+</p>
+<p>
+	<span style=\"color:#333333;font-family:\" white-space:normal;background-color:#ffffff;\"=\"\"><br />
+</span> 
+</p>
+<p>
+	<br />
+</p>
+<p>
+	<br />
+</p>' WHERE id=3
+<?php exit(); ?> Time: 2019-07-26 16:44:42. || Page: /admin/ticket_save.php || IP: 219.140.152.81 || Error: Unknown column 'specs' in 'field list' Error sql: UPDATE pmw_ticket SET names='木兰草原',types='8,9',flag='h',lowmoney='30',label='自然风光',remarks='开放时间 7:00-23:55',level=5,picarr='["uploads\/image\/20190712\/1562916085.jpg","uploads\/image\/20190712\/1562911139.jpg"]',specs='',content='',xuzhi='<span style=\"color:#333333;font-family:\" white-space:normal;background-color:#ffffff;\"=\"\">儿童：儿童身高1.2米（不含）以下免票；【免费】；大中小学在读学生，凭有效学生证件；儿童限身高1.2米（含）-1.4米（含）；老人限年龄60周岁（含）-70周岁（不含）凭有效身份证或老年证。【半价】。</span><br style=\"color:#333333;font-family:\" white-space:normal;background-color:#ffffff;\"=\"\">
+<span style=\"color:#333333;font-family:\" white-space:normal;background-color:#ffffff;\"=\"\">老人：70岁（含）以上的老人持老年证免票；【免费】。</span><br style=\"color:#333333;font-family:\" white-space:normal;background-color:#ffffff;\"=\"\">
+<span style=\"color:#333333;font-family:\" white-space:normal;background-color:#ffffff;\"=\"\">军人：军人凭持相关证件免票；【免费】。</span><br style=\"color:#333333;font-family:\" white-space:normal;background-color:#ffffff;\"=\"\">
+<span style=\"color:#333333;font-family:\" white-space:normal;background-color:#ffffff;\"=\"\">残疾人：残疾人持相关证件免票；【免费】。</span>',solds=0,orderid=0,content='<p>
+	<span style=\"color:#333333;font-family:\" white-space:normal;background-color:#ffffff;\"=\"\">&nbsp; &nbsp; &nbsp; &nbsp;木兰草原位于武汉黄陂王家河镇街聂家岗，荆楚名山——木兰山东面，湖北十大休闲度假区——木兰湖的南面，属“木兰八景”之一。景区距武汉市城区36公里，交通十分便捷。景区规划面积4800亩，分为草原风情旅游区和休闲度假区，融草原风情观光、户外拓展、水上游乐、商务会议、休闲度假为一体。</span> 
+</p>
+<p align=\"center\">
+	<span style=\"color:#333333;font-family:\" white-space:normal;background-color:#ffffff;\"=\"\"><img src=\"/uploads/image/20190712/1562915569.jpg\" alt=\"\" /><br />
+</span> 
+</p>
+<p align=\"center\">
+	<span style=\"color:#333333;font-family:\" white-space:normal;background-color:#ffffff;\"=\"\"><img src=\"/uploads/image/20190712/1562912719.jpg\" alt=\"\" /><br />
+</span> 
+</p>
+<p>
+	<span style=\"color:#333333;font-family:\" white-space:normal;background-color:#ffffff;\"=\"\"><span style=\"color:#333333;font-family:\" white-space:normal;background-color:#ffffff;\"=\"\">从木兰草原的门楼到白鹭湖的栈桥、洁白的哈达、到饱受风霜的蒙古包、历史久远的敖包，导游（庄主）通过魅力的演讲仿佛把我们带到了辽阔的北方草原，带领大家一起领略武汉木兰草原悠扬的草原文化和具有传奇的塞北风情。</span></span> 
+</p>
+<p align=\"center\">
+	<span style=\"color:#333333;font-family:\" white-space:normal;background-color:#ffffff;\"=\"\"><img src=\"/uploads/image/20190712/1562919158.jpg\" alt=\"\" /><br />
+</span> 
+</p>
+<p>
+	<span style=\"color:#333333;font-family:\" white-space:normal;background-color:#ffffff;\"=\"\"><span style=\"color:#333333;font-family:\" white-space:normal;background-color:#ffffff;\"=\"\">在木兰草原的标志性建筑牛角大门楼前合影后，通过一系列的草原小品，辽阔的草原就展现在您的面前，清澈的白鹭湖、宁静的蒙古部落、飘扬的哈达雕塑，一切是那么的自然、宁静与祥和。</span></span> 
+</p>
+<p>
+	<span style=\"color:#333333;font-family:\" white-space:normal;background-color:#ffffff;\"=\"\"><br />
+</span> 
+</p>
+<p>
+	<br />
+</p>
+<p>
+	<br />
+</p>' WHERE id=3
+<?php exit(); ?> Time: 2019-07-26 16:45:46. || Page: /admin/ticket_save.php || IP: 219.140.152.81 || Error: Unknown column 'specs' in 'field list' Error sql: UPDATE pmw_ticket SET names='木兰草原',types='7,9',flag='h',lowmoney='30',label='自然风光',remarks='开放时间 7:00-23:55',level=5,picarr='["uploads\/image\/20190712\/1562916085.jpg","uploads\/image\/20190712\/1562911139.jpg"]',specs='',content='',xuzhi='<span style=\"color:#333333;font-family:\" white-space:normal;background-color:#ffffff;\"=\"\">儿童：儿童身高1.2米（不含）以下免票；【免费】；大中小学在读学生，凭有效学生证件；儿童限身高1.2米（含）-1.4米（含）；老人限年龄60周岁（含）-70周岁（不含）凭有效身份证或老年证。【半价】。</span><br style=\"color:#333333;font-family:\" white-space:normal;background-color:#ffffff;\"=\"\">
+<span style=\"color:#333333;font-family:\" white-space:normal;background-color:#ffffff;\"=\"\">老人：70岁（含）以上的老人持老年证免票；【免费】。</span><br style=\"color:#333333;font-family:\" white-space:normal;background-color:#ffffff;\"=\"\">
+<span style=\"color:#333333;font-family:\" white-space:normal;background-color:#ffffff;\"=\"\">军人：军人凭持相关证件免票；【免费】。</span><br style=\"color:#333333;font-family:\" white-space:normal;background-color:#ffffff;\"=\"\">
+<span style=\"color:#333333;font-family:\" white-space:normal;background-color:#ffffff;\"=\"\">残疾人：残疾人持相关证件免票；【免费】。</span>',solds=0,orderid=0,content='<p>
+	<span style=\"color:#333333;font-family:\" white-space:normal;background-color:#ffffff;\"=\"\">&nbsp; &nbsp; &nbsp; &nbsp;木兰草原位于武汉黄陂王家河镇街聂家岗，荆楚名山——木兰山东面，湖北十大休闲度假区——木兰湖的南面，属“木兰八景”之一。景区距武汉市城区36公里，交通十分便捷。景区规划面积4800亩，分为草原风情旅游区和休闲度假区，融草原风情观光、户外拓展、水上游乐、商务会议、休闲度假为一体。</span> 
+</p>
+<p align=\"center\">
+	<span style=\"color:#333333;font-family:\" white-space:normal;background-color:#ffffff;\"=\"\"><img src=\"/uploads/image/20190712/1562915569.jpg\" alt=\"\" /><br />
+</span> 
+</p>
+<p align=\"center\">
+	<span style=\"color:#333333;font-family:\" white-space:normal;background-color:#ffffff;\"=\"\"><img src=\"/uploads/image/20190712/1562912719.jpg\" alt=\"\" /><br />
+</span> 
+</p>
+<p>
+	<span style=\"color:#333333;font-family:\" white-space:normal;background-color:#ffffff;\"=\"\"><span style=\"color:#333333;font-family:\" white-space:normal;background-color:#ffffff;\"=\"\">从木兰草原的门楼到白鹭湖的栈桥、洁白的哈达、到饱受风霜的蒙古包、历史久远的敖包，导游（庄主）通过魅力的演讲仿佛把我们带到了辽阔的北方草原，带领大家一起领略武汉木兰草原悠扬的草原文化和具有传奇的塞北风情。</span></span> 
+</p>
+<p align=\"center\">
+	<span style=\"color:#333333;font-family:\" white-space:normal;background-color:#ffffff;\"=\"\"><img src=\"/uploads/image/20190712/1562919158.jpg\" alt=\"\" /><br />
+</span> 
+</p>
+<p>
+	<span style=\"color:#333333;font-family:\" white-space:normal;background-color:#ffffff;\"=\"\"><span style=\"color:#333333;font-family:\" white-space:normal;background-color:#ffffff;\"=\"\">在木兰草原的标志性建筑牛角大门楼前合影后，通过一系列的草原小品，辽阔的草原就展现在您的面前，清澈的白鹭湖、宁静的蒙古部落、飘扬的哈达雕塑，一切是那么的自然、宁静与祥和。</span></span> 
+</p>
+<p>
+	<span style=\"color:#333333;font-family:\" white-space:normal;background-color:#ffffff;\"=\"\"><br />
+</span> 
+</p>
+<p>
+	<br />
+</p>
+<p>
+	<br />
+</p>' WHERE id=3
+<?php exit(); ?> Time: 2019-07-26 16:47:38. || Page: /admin/ticket_save.php || IP: 219.140.152.81 || Error: Unknown column 'specs' in 'field list' Error sql: UPDATE pmw_ticket SET names='木兰草原',types='Array',flag='h',lowmoney='30',label='自然风光',remarks='开放时间 7:00-23:55',level=5,picarr='["uploads\/image\/20190712\/1562916085.jpg","uploads\/image\/20190712\/1562911139.jpg"]',specs='',content='',xuzhi='<span style=\"color:#333333;font-family:\" white-space:normal;background-color:#ffffff;\"=\"\">儿童：儿童身高1.2米（不含）以下免票；【免费】；大中小学在读学生，凭有效学生证件；儿童限身高1.2米（含）-1.4米（含）；老人限年龄60周岁（含）-70周岁（不含）凭有效身份证或老年证。【半价】。</span><br style=\"color:#333333;font-family:\" white-space:normal;background-color:#ffffff;\"=\"\">
+<span style=\"color:#333333;font-family:\" white-space:normal;background-color:#ffffff;\"=\"\">老人：70岁（含）以上的老人持老年证免票；【免费】。</span><br style=\"color:#333333;font-family:\" white-space:normal;background-color:#ffffff;\"=\"\">
+<span style=\"color:#333333;font-family:\" white-space:normal;background-color:#ffffff;\"=\"\">军人：军人凭持相关证件免票；【免费】。</span><br style=\"color:#333333;font-family:\" white-space:normal;background-color:#ffffff;\"=\"\">
+<span style=\"color:#333333;font-family:\" white-space:normal;background-color:#ffffff;\"=\"\">残疾人：残疾人持相关证件免票；【免费】。</span>',solds=0,content='<p>
+	<span style=\"color:#333333;font-family:\" white-space:normal;background-color:#ffffff;\"=\"\">&nbsp; &nbsp; &nbsp; &nbsp;木兰草原位于武汉黄陂王家河镇街聂家岗，荆楚名山——木兰山东面，湖北十大休闲度假区——木兰湖的南面，属“木兰八景”之一。景区距武汉市城区36公里，交通十分便捷。景区规划面积4800亩，分为草原风情旅游区和休闲度假区，融草原风情观光、户外拓展、水上游乐、商务会议、休闲度假为一体。</span> 
+</p>
+<p align=\"center\">
+	<span style=\"color:#333333;font-family:\" white-space:normal;background-color:#ffffff;\"=\"\"><img src=\"/uploads/image/20190712/1562915569.jpg\" alt=\"\" /><br />
+</span> 
+</p>
+<p align=\"center\">
+	<span style=\"color:#333333;font-family:\" white-space:normal;background-color:#ffffff;\"=\"\"><img src=\"/uploads/image/20190712/1562912719.jpg\" alt=\"\" /><br />
+</span> 
+</p>
+<p>
+	<span style=\"color:#333333;font-family:\" white-space:normal;background-color:#ffffff;\"=\"\"><span style=\"color:#333333;font-family:\" white-space:normal;background-color:#ffffff;\"=\"\">从木兰草原的门楼到白鹭湖的栈桥、洁白的哈达、到饱受风霜的蒙古包、历史久远的敖包，导游（庄主）通过魅力的演讲仿佛把我们带到了辽阔的北方草原，带领大家一起领略武汉木兰草原悠扬的草原文化和具有传奇的塞北风情。</span></span> 
+</p>
+<p align=\"center\">
+	<span style=\"color:#333333;font-family:\" white-space:normal;background-color:#ffffff;\"=\"\"><img src=\"/uploads/image/20190712/1562919158.jpg\" alt=\"\" /><br />
+</span> 
+</p>
+<p>
+	<span style=\"color:#333333;font-family:\" white-space:normal;background-color:#ffffff;\"=\"\"><span style=\"color:#333333;font-family:\" white-space:normal;background-color:#ffffff;\"=\"\">在木兰草原的标志性建筑牛角大门楼前合影后，通过一系列的草原小品，辽阔的草原就展现在您的面前，清澈的白鹭湖、宁静的蒙古部落、飘扬的哈达雕塑，一切是那么的自然、宁静与祥和。</span></span> 
+</p>
+<p>
+	<span style=\"color:#333333;font-family:\" white-space:normal;background-color:#ffffff;\"=\"\"><br />
+</span> 
+</p>
+<p>
+	<br />
+</p>
+<p>
+	<br />
+</p>' WHERE id=3
+<?php exit(); ?> Time: 2019-07-26 16:49:20. || Page: /admin/ticket_save.php || IP: 219.140.152.81 || Error: Unknown column 'specs' in 'field list' Error sql: UPDATE pmw_ticket SET names='木兰草原',types='Array',flag='h',lowmoney='30',label='自然风光',remarks='开放时间 7:00-23:55',level=5,picarr='["uploads\/image\/20190712\/1562916085.jpg","uploads\/image\/20190712\/1562911139.jpg"]',specs='',content='',xuzhi='<span style=\"color:#333333;font-family:\" white-space:normal;background-color:#ffffff;\"=\"\">儿童：儿童身高1.2米（不含）以下免票；【免费】；大中小学在读学生，凭有效学生证件；儿童限身高1.2米（含）-1.4米（含）；老人限年龄60周岁（含）-70周岁（不含）凭有效身份证或老年证。【半价】。</span><br style=\"color:#333333;font-family:\" white-space:normal;background-color:#ffffff;\"=\"\">
+<span style=\"color:#333333;font-family:\" white-space:normal;background-color:#ffffff;\"=\"\">老人：70岁（含）以上的老人持老年证免票；【免费】。</span><br style=\"color:#333333;font-family:\" white-space:normal;background-color:#ffffff;\"=\"\">
+<span style=\"color:#333333;font-family:\" white-space:normal;background-color:#ffffff;\"=\"\">军人：军人凭持相关证件免票；【免费】。</span><br style=\"color:#333333;font-family:\" white-space:normal;background-color:#ffffff;\"=\"\">
+<span style=\"color:#333333;font-family:\" white-space:normal;background-color:#ffffff;\"=\"\">残疾人：残疾人持相关证件免票；【免费】。</span>',solds=0,content='<p>
+	<span style=\"color:#333333;font-family:\" white-space:normal;background-color:#ffffff;\"=\"\">&nbsp; &nbsp; &nbsp; &nbsp;木兰草原位于武汉黄陂王家河镇街聂家岗，荆楚名山——木兰山东面，湖北十大休闲度假区——木兰湖的南面，属“木兰八景”之一。景区距武汉市城区36公里，交通十分便捷。景区规划面积4800亩，分为草原风情旅游区和休闲度假区，融草原风情观光、户外拓展、水上游乐、商务会议、休闲度假为一体。</span> 
+</p>
+<p align=\"center\">
+	<span style=\"color:#333333;font-family:\" white-space:normal;background-color:#ffffff;\"=\"\"><img src=\"/uploads/image/20190712/1562915569.jpg\" alt=\"\" /><br />
+</span> 
+</p>
+<p align=\"center\">
+	<span style=\"color:#333333;font-family:\" white-space:normal;background-color:#ffffff;\"=\"\"><img src=\"/uploads/image/20190712/1562912719.jpg\" alt=\"\" /><br />
+</span> 
+</p>
+<p>
+	<span style=\"color:#333333;font-family:\" white-space:normal;background-color:#ffffff;\"=\"\"><span style=\"color:#333333;font-family:\" white-space:normal;background-color:#ffffff;\"=\"\">从木兰草原的门楼到白鹭湖的栈桥、洁白的哈达、到饱受风霜的蒙古包、历史久远的敖包，导游（庄主）通过魅力的演讲仿佛把我们带到了辽阔的北方草原，带领大家一起领略武汉木兰草原悠扬的草原文化和具有传奇的塞北风情。</span></span> 
+</p>
+<p align=\"center\">
+	<span style=\"color:#333333;font-family:\" white-space:normal;background-color:#ffffff;\"=\"\"><img src=\"/uploads/image/20190712/1562919158.jpg\" alt=\"\" /><br />
+</span> 
+</p>
+<p>
+	<span style=\"color:#333333;font-family:\" white-space:normal;background-color:#ffffff;\"=\"\"><span style=\"color:#333333;font-family:\" white-space:normal;background-color:#ffffff;\"=\"\">在木兰草原的标志性建筑牛角大门楼前合影后，通过一系列的草原小品，辽阔的草原就展现在您的面前，清澈的白鹭湖、宁静的蒙古部落、飘扬的哈达雕塑，一切是那么的自然、宁静与祥和。</span></span> 
+</p>
+<p>
+	<span style=\"color:#333333;font-family:\" white-space:normal;background-color:#ffffff;\"=\"\"><br />
+</span> 
+</p>
+<p>
+	<br />
+</p>
+<p>
+	<br />
+</p>' WHERE id=3

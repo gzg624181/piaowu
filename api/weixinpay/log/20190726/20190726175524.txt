@@ -1,0 +1,19 @@
+Array
+(
+    [appid] => wx0b0886d2684fd9ef
+    [bank_type] => LQT
+    [cash_fee] => 3
+    [fee_type] => CNY
+    [is_subscribe] => N
+    [mch_id] => 1544214821
+    [nonce_str] => kah26tsxlt1lkl2whhxkt1fj7mnibt2u
+    [openid] => oz7S15BU6YPAdg8d3aDTwovdFjl0
+    [out_trade_no] => 20190726152109809533
+    [result_code] => SUCCESS
+    [return_code] => SUCCESS
+    [sign] => 879CFADBE1507934DB48B258D84C2023
+    [time_end] => 20190726152115
+    [total_fee] => 3
+    [trade_type] => JSAPI
+    [transaction_id] => 4200000377201907261529685317
+)
